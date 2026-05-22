@@ -271,7 +271,7 @@
   "id": "hospital-visit-may-22",
   "start": "2026-05-22",
   "end": "2026-05-22",
-  "status": "unavailable",
+  "status": "limited",
   "reachability": "delayed",
   "channelCode": "email",
   "visibilityKey": "health",
@@ -282,11 +282,11 @@
     "es": "Reservado"
   },
   "descriptions": {
-    "en": "Hospital visit and rest day. Clear written requests stay reviewable and will be handled after recovery.",
-    "fr": "Visite à l’hôpital et journée de repos. Les demandes écrites claires restent consultables et seront traitées après récupération.",
-    "de": "Krankenhausbesuch und Ruhetag. Klare schriftliche Anfragen bleiben prüfbar und werden nach der Erholung bearbeitet.",
-    "es": "Visita al hospital y día de descanso. Las solicitudes escritas claras siguen siendo revisables y se atenderán después de la recuperación."
+    "en": "Morning hospital visit. Availability is limited because hour-based availability is not shown yet; clear written requests remain reviewable.",
+    "fr": "Visite à l’hôpital le matin. La disponibilité est limitée car l’affichage par heure n’est pas encore disponible ; les demandes écrites claires restent consultables.",
+    "de": "Krankenhausbesuch am Vormittag. Die Verfügbarkeit ist eingeschränkt, da eine stundenbasierte Anzeige noch nicht verfügbar ist; klare schriftliche Anfragen bleiben prüfbar.",
+    "es": "Visita al hospital por la mañana. La disponibilidad es limitada porque aún no se muestra por horas; las solicitudes escritas claras siguen siendo revisables."
   }
-    }
+}
   ]
 }
