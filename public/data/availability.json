@@ -287,27 +287,6 @@
     "de": "Krankenhausbesuch und Ruhetag. Klare schriftliche Anfragen bleiben prüfbar und werden nach der Erholung bearbeitet.",
     "es": "Visita al hospital y día de descanso. Las solicitudes escritas claras siguen siendo revisables y se atenderán después de la recuperación."
   }
-    }, 
-    {
-      "id": "camping-may-23",
-      "start": "2026-05-23",
-      "end": "2026-05-23",
-      "status": "unavailable",
-      "reachability": "offline",
-      "channelCode": "email",
-      "visibilityKey": "camping",
-      "titles": {
-        "en": "On Site",
-        "fr": "Sur site",
-        "de": "Vor Ort",
-        "es": "En sitio"
-      },
-      "descriptions": {
-        "en": "Camping day with weak or no signal. Clear written requests are safest for the return pass.",
-        "fr": "Journée de camping avec signal faible ou nul. Les demandes écrites claires sont les plus sûres pour le retour.",
-        "de": "Campingtage mit schwachem oder keinem Signal. Klare schriftliche Anfragen sind am sichersten für die Rückkehr.",
-        "es": "Día de camping con señal débil o nula. Las solicitudes escritas claras son lo más seguro para la vuelta."
-      }
     }
   ]
 }
