@@ -287,7 +287,7 @@
     "de": "Krankenhausbesuch und Ruhetag. Klare schriftliche Anfragen bleiben prüfbar und werden nach der Erholung bearbeitet.",
     "es": "Visita al hospital y día de descanso. Las solicitudes escritas claras siguen siendo revisables y se atenderán después de la recuperación."
   }
-}'
+    }, 
     {
       "id": "camping-may-23",
       "start": "2026-05-23",
