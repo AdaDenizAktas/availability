@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-05-26T10:00:00+03:00",
+    "updatedAt": "2026-05-26T11:00:00+03:00",
     "defaultLocale": "en",
     "locales": [
       "en",
@@ -56,7 +56,6 @@
       "legendCommunication": "Communication-heavy",
       "legendQuiet": "Quiet period",
       "legendBuild": "Build block",
-      "legendBug": "Bug cleanup / insecticide spraying",
       "channelEmail": "Email",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -70,7 +69,8 @@
       "email": "Email",
       "whatsapp": "WhatsApp",
       "teams": "Teams",
-      "phone": "GSM"
+      "phone": "GSM",
+      "legendBug": "Bug cleanup / insecticide spraying"
     },
     "fr": {
       "availability": "Disponibilité",
@@ -108,7 +108,6 @@
       "legendCommunication": "Communication dense",
       "legendQuiet": "Période calme",
       "legendBuild": "Bloc construction",
-      "legendBug": "Nettoyage anti-insectes / pulvérisation d’insecticide",
       "channelEmail": "E-mail",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -122,7 +121,8 @@
       "email": "E-mail",
       "whatsapp": "WhatsApp",
       "teams": "Teams",
-      "phone": "GSM"
+      "phone": "GSM",
+      "legendBug": "Nettoyage anti-insectes / pulvérisation d’insecticide"
     },
     "de": {
       "availability": "Verfügbarkeit",
@@ -160,7 +160,6 @@
       "legendCommunication": "Kommunikationslastig",
       "legendQuiet": "Ruhige Phase",
       "legendBuild": "Baublock",
-      "legendBug": "Insektenreinigung / Insektizidsprühung",
       "channelEmail": "E-Mail",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -174,7 +173,8 @@
       "email": "E-Mail",
       "whatsapp": "WhatsApp",
       "teams": "Teams",
-      "phone": "GSM"
+      "phone": "GSM",
+      "legendBug": "Insektenreinigung / Insektizidsprühung"
     },
     "es": {
       "availability": "Disponibilidad",
@@ -212,7 +212,6 @@
       "legendCommunication": "Alta comunicación",
       "legendQuiet": "Periodo tranquilo",
       "legendBuild": "Bloque de construcción",
-      "legendBug": "Limpieza de insectos / fumigación con insecticida",
       "channelEmail": "Correo",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -226,7 +225,8 @@
       "email": "Correo",
       "whatsapp": "WhatsApp",
       "teams": "Teams",
-      "phone": "GSM"
+      "phone": "GSM",
+      "legendBug": "Limpieza de insectos / fumigación con insecticida"
     }
   },
   "events": [
@@ -273,24 +273,24 @@
       }
     },
     {
-      "id": "hospital-visit-may-22",
-      "start": "2026-05-22",
-      "end": "2026-05-22",
-      "status": "limited",
-      "reachability": "delayed",
+      "id": "camping-may-23",
+      "start": "2026-05-23",
+      "end": "2026-05-23",
+      "status": "unavailable",
+      "reachability": "offline",
       "channelCode": "email",
-      "visibilityKey": "health",
+      "visibilityKey": "camping",
       "titles": {
-        "en": "Reserved",
-        "fr": "Réservé",
-        "de": "Reserviert",
-        "es": "Reservado"
+        "en": "On Site",
+        "fr": "Sur site",
+        "de": "Vor Ort",
+        "es": "En sitio"
       },
       "descriptions": {
-        "en": "Morning hospital visit. Availability is limited because hour-based availability is not shown yet; clear written requests remain reviewable.",
-        "fr": "Visite à l’hôpital le matin. La disponibilité est limitée car l’affichage par heure n’est pas encore disponible ; les demandes écrites claires restent consultables.",
-        "de": "Krankenhausbesuch am Vormittag. Die Verfügbarkeit ist eingeschränkt, da eine stundenbasierte Anzeige noch nicht verfügbar ist; klare schriftliche Anfragen bleiben prüfbar.",
-        "es": "Visita al hospital por la mañana. La disponibilidad es limitada porque aún no se muestra por horas; las solicitudes escritas claras siguen siendo revisables."
+        "en": "Camping day with weak or no signal. Clear written requests are safest for the return pass.",
+        "fr": "Journée de camping avec signal faible ou nul. Les demandes écrites claires sont les plus sûres pour le retour.",
+        "de": "Campingtage mit schwachem oder keinem Signal. Klare schriftliche Anfragen sind am sichersten für die Rückkehr.",
+        "es": "Día de camping con señal débil o nula. Las solicitudes escritas claras son lo más seguro para la vuelta."
       }
     },
     {
@@ -300,8 +300,14 @@
       "status": "limited",
       "reachability": "delayed",
       "channelCode": "email",
-      "visibilityKey": "bug",
+      "visibilityKey": "bug-cleanup",
       "indicator": "🐞",
+      "indicatorLabels": {
+        "en": "Bug cleanup / insecticide spraying",
+        "fr": "Nettoyage anti-insectes / pulvérisation d’insecticide",
+        "de": "Insektenreinigung / Insektizidsprühung",
+        "es": "Limpieza de insectos / fumigación con insecticida"
+      },
       "titles": {
         "en": "Reserved",
         "fr": "Réservé",

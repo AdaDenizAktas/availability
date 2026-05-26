@@ -154,18 +154,27 @@ const oneYearEvents = computed(() => {
     .sort((a, b) => a.start.localeCompare(b.start))
 })
 
-const selectedIndicatorKeys = computed(() => {
-  const keys = selectedEvents.value
-    .map((entry) => entry.visibilityKey)
-    .filter(Boolean)
-  return [...new Set(keys)]
-})
+function eventIndicatorText(entry) {
+  return entry?.indicator ?? symbolMap[entry?.visibilityKey]?.glyph ?? '●'
+}
 
-const selectedIndicators = computed(() => selectedIndicatorKeys.value.map((key) => ({
-  key,
-  glyph: symbolMap[key]?.glyph ?? '●',
-  label: symbolMap[key]?.labelKey ? t.value[symbolMap[key].labelKey] : ''
-})))
+function eventIndicatorLabel(entry) {
+  if (entry?.indicatorLabels) return localText(entry.indicatorLabels)
+  const key = symbolMap[entry?.visibilityKey]?.labelKey
+  return key ? t.value[key] : ''
+}
+
+const selectedIndicators = computed(() => {
+  const indicators = selectedEvents.value
+    .map((entry) => ({
+      key: `${entry.id}:${eventIndicatorText(entry)}:${eventIndicatorLabel(entry)}`,
+      glyph: eventIndicatorText(entry),
+      label: eventIndicatorLabel(entry)
+    }))
+    .filter((indicator) => indicator.glyph)
+
+  return [...new Map(indicators.map((indicator) => [indicator.key, indicator])).values()]
+})
 
 function moveMonth(delta) {
   monthFocus.value = shiftMonth(monthFocus.value, delta)
@@ -189,12 +198,11 @@ function rangeLabelForEvent(entry) {
 }
 
 function eventSymbol(entry) {
-  return symbolMap[entry?.visibilityKey]?.glyph ?? '●'
+  return eventIndicatorText(entry)
 }
 
 function eventSymbolTitle(entry) {
-  const key = symbolMap[entry?.visibilityKey]?.labelKey
-  return key ? t.value[key] : ''
+  return eventIndicatorLabel(entry)
 }
 
 function openEvent(entry) {
