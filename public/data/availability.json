@@ -314,12 +314,12 @@
         "de": "Reserviert",
         "es": "Reservado"
       },
-      "descriptions": {
-        "en": "Bug cleanup via insecticide spraying. Availability may be limited during the cleanup window; clear written requests remain reviewable.",
-        "fr": "Nettoyage anti-insectes avec pulvérisation d’insecticide. La disponibilité peut être limitée pendant l’intervention ; les demandes écrites claires restent consultables.",
-        "de": "Insektenreinigung mit Insektizidsprühung. Die Verfügbarkeit kann während des Reinigungsfensters eingeschränkt sein; klare schriftliche Anfragen bleiben prüfbar.",
-        "es": "Limpieza de insectos mediante fumigación con insecticida. La disponibilidad puede ser limitada durante la intervención; las solicitudes escritas claras siguen siendo revisables."
-      }
+         "descriptions": {
+  "en": "A pest-control procedure involving insecticide application is scheduled. Availability may be subject to limitation during the applicable treatment window; clear written requests shall remain reviewable.",
+  "fr": "Une procédure de lutte antiparasitaire impliquant l’application d’un insecticide est prévue. La disponibilité pourra être limitée pendant la période d’intervention applicable ; les demandes écrites claires resteront consultables.",
+  "de": "Ein Schädlingsbekämpfungsverfahren unter Einsatz von Insektizid ist vorgesehen. Die Verfügbarkeit kann während des maßgeblichen Behandlungszeitraums eingeschränkt sein; klare schriftliche Anfragen bleiben prüfbar.",
+  "es": "Se ha programado un procedimiento de control de plagas que implica la aplicación de insecticida. La disponibilidad podrá estar sujeta a limitaciones durante el periodo de tratamiento correspondiente; las solicitudes escritas claras seguirán siendo revisables."
+}
     }
   ]
 }
