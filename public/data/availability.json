@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-05-20T09:30:00+03:00",
+    "updatedAt": "2026-05-26T10:00:00+03:00",
     "defaultLocale": "en",
     "locales": [
       "en",
@@ -56,6 +56,7 @@
       "legendCommunication": "Communication-heavy",
       "legendQuiet": "Quiet period",
       "legendBuild": "Build block",
+      "legendBug": "Bug cleanup / insecticide spraying",
       "channelEmail": "Email",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -107,6 +108,7 @@
       "legendCommunication": "Communication dense",
       "legendQuiet": "Période calme",
       "legendBuild": "Bloc construction",
+      "legendBug": "Nettoyage anti-insectes / pulvérisation d’insecticide",
       "channelEmail": "E-mail",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -158,6 +160,7 @@
       "legendCommunication": "Kommunikationslastig",
       "legendQuiet": "Ruhige Phase",
       "legendBuild": "Baublock",
+      "legendBug": "Insektenreinigung / Insektizidsprühung",
       "channelEmail": "E-Mail",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -209,6 +212,7 @@
       "legendCommunication": "Alta comunicación",
       "legendQuiet": "Periodo tranquilo",
       "legendBuild": "Bloque de construcción",
+      "legendBug": "Limpieza de insectos / fumigación con insecticida",
       "channelEmail": "Correo",
       "channelWhatsApp": "WhatsApp",
       "channelPhone": "GSM",
@@ -267,26 +271,49 @@
         "de": "Elektrische Wartung von 09:00 bis 15:30, einschließlich der Blöcke 09:00-12:30 und 12:30-15:30. Klare schriftliche Anfragen bleiben prüfbar.",
         "es": "Mantenimiento eléctrico de 09:00 a 15:30, incluidos los bloques 09:00-12:30 y 12:30-15:30. Las solicitudes escritas claras siguen siendo revisables."
       }
-    },{
-  "id": "hospital-visit-may-22",
-  "start": "2026-05-22",
-  "end": "2026-05-22",
-  "status": "limited",
-  "reachability": "delayed",
-  "channelCode": "email",
-  "visibilityKey": "health",
-  "titles": {
-    "en": "Reserved",
-    "fr": "Réservé",
-    "de": "Reserviert",
-    "es": "Reservado"
-  },
-  "descriptions": {
-    "en": "Morning hospital visit. Availability is limited because hour-based availability is not shown yet; clear written requests remain reviewable.",
-    "fr": "Visite à l’hôpital le matin. La disponibilité est limitée car l’affichage par heure n’est pas encore disponible ; les demandes écrites claires restent consultables.",
-    "de": "Krankenhausbesuch am Vormittag. Die Verfügbarkeit ist eingeschränkt, da eine stundenbasierte Anzeige noch nicht verfügbar ist; klare schriftliche Anfragen bleiben prüfbar.",
-    "es": "Visita al hospital por la mañana. La disponibilidad es limitada porque aún no se muestra por horas; las solicitudes escritas claras siguen siendo revisables."
-  }
-}
+    },
+    {
+      "id": "hospital-visit-may-22",
+      "start": "2026-05-22",
+      "end": "2026-05-22",
+      "status": "limited",
+      "reachability": "delayed",
+      "channelCode": "email",
+      "visibilityKey": "health",
+      "titles": {
+        "en": "Reserved",
+        "fr": "Réservé",
+        "de": "Reserviert",
+        "es": "Reservado"
+      },
+      "descriptions": {
+        "en": "Morning hospital visit. Availability is limited because hour-based availability is not shown yet; clear written requests remain reviewable.",
+        "fr": "Visite à l’hôpital le matin. La disponibilité est limitée car l’affichage par heure n’est pas encore disponible ; les demandes écrites claires restent consultables.",
+        "de": "Krankenhausbesuch am Vormittag. Die Verfügbarkeit ist eingeschränkt, da eine stundenbasierte Anzeige noch nicht verfügbar ist; klare schriftliche Anfragen bleiben prüfbar.",
+        "es": "Visita al hospital por la mañana. La disponibilidad es limitada porque aún no se muestra por horas; las solicitudes escritas claras siguen siendo revisables."
+      }
+    },
+    {
+      "id": "bug-cleanup-may-27",
+      "start": "2026-05-27",
+      "end": "2026-05-27",
+      "status": "limited",
+      "reachability": "delayed",
+      "channelCode": "email",
+      "visibilityKey": "bug",
+      "indicator": "🐞",
+      "titles": {
+        "en": "Reserved",
+        "fr": "Réservé",
+        "de": "Reserviert",
+        "es": "Reservado"
+      },
+      "descriptions": {
+        "en": "Bug cleanup via insecticide spraying. Availability may be limited during the cleanup window; clear written requests remain reviewable.",
+        "fr": "Nettoyage anti-insectes avec pulvérisation d’insecticide. La disponibilité peut être limitée pendant l’intervention ; les demandes écrites claires restent consultables.",
+        "de": "Insektenreinigung mit Insektizidsprühung. Die Verfügbarkeit kann während des Reinigungsfensters eingeschränkt sein; klare schriftliche Anfragen bleiben prüfbar.",
+        "es": "Limpieza de insectos mediante fumigación con insecticida. La disponibilidad puede ser limitada durante la intervención; las solicitudes escritas claras siguen siendo revisables."
+      }
+    }
   ]
 }
